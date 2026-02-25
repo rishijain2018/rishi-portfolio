@@ -1,213 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishi Jain | IT System Administrator & Zoho Specialist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-        * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
-        body { background:#f8fafc; color:#1f2937; }
-        html { scroll-behavior:smooth; }
-
-        header {
-            background: linear-gradient(135deg, #ffffff, #eef2f7);
-            padding:60px 20px;
-            text-align:center;
-        }
-
-        header img {
-            width:140px;
-            height:140px;
-            border-radius:50%;
-            object-fit:cover;
-            box-shadow:0 10px 25px rgba(0,0,0,0.1);
-            margin-bottom:20px;
-        }
-
-        header h1 { font-size:36px; font-weight:700; }
-        header p { margin-top:10px; font-size:18px; color:#6b7280; }
-
-        .btn {
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:#2563eb;
-            color:#fff;
-            border-radius:30px;
-            text-decoration:none;
-            transition:0.3s;
-        }
-
-        .btn:hover { background:#1e40af; }
-
-        section { max-width:1100px; margin:60px auto; padding:0 20px; }
-        h2 { font-size:26px; margin-bottom:30px; position:relative; }
-        h2::after {
-            content:"";
-            width:60px;
-            height:4px;
-            background:#2563eb;
-            position:absolute;
-            bottom:-10px;
-            left:0;
-        }
-
-        .grid { display:grid; gap:20px; }
-        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); }
-
-        .card {
-            background:#ffffff;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 8px 25px rgba(0,0,0,0.05);
-            transition:0.3s;
-        }
-
-        .card:hover { transform:translateY(-5px); }
-        .card h3 { margin-bottom:15px; }
-        ul { padding-left:18px; }
-        li { margin-bottom:8px; }
-
-        .skills span {
-            display:inline-block;
-            background:#e0e7ff;
-            color:#1e3a8a;
-            padding:8px 15px;
-            border-radius:20px;
-            margin:5px 5px 0 0;
-            font-size:14px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width:100%;
-            padding:12px;
-            margin-bottom:15px;
-            border-radius:8px;
-            border:1px solid #d1d5db;
-        }
-
-        .contact-form button {
-            padding:12px 25px;
-            background:#2563eb;
-            color:white;
-            border:none;
-            border-radius:30px;
-            cursor:pointer;
-            transition:0.3s;
-        }
-
-        .contact-form button:hover { background:#1e40af; }
-
-        footer {
-            text-align:center;
-            padding:30px;
-            background:#ffffff;
-            margin-top:60px;
-            color:#6b7280;
-        }
-
-        @media(max-width:600px){ header h1{font-size:28px;} }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Jain | IT Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f7fb;color:#1f2937}
+html{scroll-behavior:smooth}
+nav{position:fixed;width:100%;background:#fff;padding:15px 50px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:1000}
+nav a{text-decoration:none;color:#1f2937;margin-left:20px;font-weight:500}
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#ffffff,#e8f0ff)}
+header h1{font-size:48px;font-weight:700}
+header span{color:#2563eb}
+header p{margin-top:15px;font-size:20px;color:#6b7280}
+.btn{margin-top:25px;padding:12px 28px;border-radius:30px;background:#2563eb;color:#fff;text-decoration:none;display:inline-block}
+section{max-width:1100px;margin:80px auto;padding:0 20px}
+h2{font-size:28px;margin-bottom:30px;border-left:5px solid #2563eb;padding-left:10px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.05);margin-bottom:20px}
+.skills-bar{margin-bottom:15px}
+.skills-bar p{margin-bottom:5px;font-weight:500}
+.progress{background:#e5e7eb;border-radius:20px;overflow:hidden}
+.progress div{height:8px;background:#2563eb}
+.grid{display:grid;gap:20px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+footer{text-align:center;padding:30px;background:#fff;margin-top:50px;color:#6b7280}
+@media(max-width:600px){header h1{font-size:32px}}
+</style>
 </head>
 <body>
 
+<nav>
+<div><strong>Rishi Jain</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <header>
-    <img src="https://via.placeholder.com/140" alt="Rishi Jain">
-    <h1>Rishi Jain</h1>
-    <p>IT System Administrator | Network Engineer | Zoho CRM & Desk Specialist</p>
-    <a href="#contact" class="btn">Hire Me</a>
-    <a href="Resume.pdf" class="btn" style="background:#10b981; margin-left:10px;">Download CV</a>
+<h1>Hi, I'm <span>Rishi Jain</span></h1>
+<p><span id="typing"></span></p>
+<a href="#contact" class="btn">Hire Me</a>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>Results-driven IT professional with hands-on experience in desktop support, system administration, networking, and Zoho application management. Experienced in Windows Server, Active Directory, LAN/WAN networking, VPN configuration, and customer support operations.</p>
-    </div>
+<h2>About Me</h2>
+<div class="card">
+<p>IT System Administrator with experience in Windows Server management, networking, Zoho CRM & Desk administration, cloud basics (AWS/Azure) and enterprise technical support. Passionate about infrastructure management and delivering reliable IT solutions.</p>
+</div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="card skills">
-        <span>Windows Server 2012/2016</span>
-        <span>Active Directory</span>
-        <span>DHCP / DNS</span>
-        <span>LAN / WAN</span>
-        <span>VPN Setup</span>
-        <span>AWS (Basic)</span>
-        <span>Azure (Basic)</span>
-        <span>Zoho CRM</span>
-        <span>Zoho Desk</span>
-        <span>Zoho Mail Admin</span>
-        <span>Technical Support</span>
-        <span>Server Monitoring</span>
-    </div>
+<h2>Technical Skills</h2>
+<div class="card">
+<div class="skills-bar"><p>Windows Server & Active Directory</p><div class="progress"><div style="width:90%"></div></div></div>
+<div class="skills-bar"><p>Networking (LAN/WAN, DHCP, DNS, VPN)</p><div class="progress"><div style="width:85%"></div></div></div>
+<div class="skills-bar"><p>Zoho CRM / Zoho Desk / Zoho Mail</p><div class="progress"><div style="width:80%"></div></div></div>
+<div class="skills-bar"><p>AWS & Azure (Basics)</p><div class="progress"><div style="width:70%"></div></div></div>
+<div class="skills-bar"><p>Technical Support & Troubleshooting</p><div class="progress"><div style="width:95%"></div></div></div>
+</div>
 </section>
 
-<section>
-    <h2>Professional Experience</h2>
-    <div class="grid grid-3">
-        <div class="card">
-            <h3>Ezeetech Solutions</h3>
-            <p><strong>Desktop Support Engineer (2021–Present)</strong></p>
-            <ul>
-                <li>Managed Windows Servers & Active Directory</li>
-                <li>Configured LAN/WAN, VPN, DHCP & DNS</li>
-                <li>Provided remote & onsite technical support</li>
-                <li>Maintained server security & performance</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>One E Info Pvt Ltd</h3>
-            <p><strong>IT Support Intern (2019–2020)</strong></p>
-            <ul>
-                <li>Installed & configured IT equipment</li>
-                <li>Troubleshot hardware & software issues</li>
-                <li>Vendor coordination & reporting</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Certifications</h3>
-            <ul>
-                <li>MCSA (2023)</li>
-                <li>CCNA</li>
-                <li>CompTIA A+</li>
-                <li>Windows 10 Troubleshooting</li>
-            </ul>
-        </div>
-    </div>
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid grid-2">
+<div class="card">
+<h3>Zoho CRM Implementation</h3>
+<p>Configured Zoho CRM modules, workflows, automation rules and user roles for business process optimization.</p>
+</div>
+<div class="card">
+<h3>Windows Server Deployment</h3>
+<p>Installed and configured Windows Server 2016 with Active Directory, Group Policies and secure network setup.</p>
+</div>
+<div class="card">
+<h3>Network Infrastructure Setup</h3>
+<p>Configured LAN/WAN networks including DHCP, DNS and VPN connectivity for secure communication.</p>
+</div>
+<div class="card">
+<h3>Zoho Desk Support System</h3>
+<p>Implemented ticketing system, SLA rules and automation to improve customer support workflow.</p>
+</div>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="card">
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! I will contact you soon.');">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <br>
-        <p><strong>Email:</strong> rishijain2018@gmail.com</p>
-        <p><strong>Phone:</strong> +91 8595876741</p>
-        <p><strong>LinkedIn:</strong> https://in.linkedin.com/in/rishi-jain-892800150</p>
-    </div>
+<h2>Contact Me</h2>
+<div class="card">
+<p><strong>Email:</strong> rishijain2018@gmail.com</p>
+<p><strong>Phone:</strong> +91 8595876741</p>
+<p><strong>LinkedIn:</strong> https://in.linkedin.com/in/rishi-jain-892800150</p>
+</div>
 </section>
 
 <footer>
-    © 2026 Rishi Jain | Professional IT Portfolio
+© 2026 Rishi Jain | Professional IT Portfolio
 </footer>
 
 <script>
-    ScrollReveal().reveal('.card, h2', {
-        distance: '50px',
-        duration: 1000,
-        easing: 'ease-in-out',
-        origin: 'bottom',
-        interval: 200
-    });
+new Typed('#typing', {
+strings: ['System Administrator', 'Network Engineer', 'Zoho CRM Specialist', 'IT Support Engineer'],
+typeSpeed: 60,
+backSpeed: 40,
+loop: true
+});
 </script>
 
 </body>
